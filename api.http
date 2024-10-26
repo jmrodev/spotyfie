@@ -1,3 +1,35 @@
+### La API de usuarios debe poder agregar, obtener por id, actualizar y borrar usuarios
+### Todos los usuarios
+POST http://localhost:3001/usuarios
+Content-Type: application/json
+
+{
+   "id": "67",
+    "nombre": "Peter the cat",
+    "email":  "ElMailDePeter@Mail"
+}
+###
+GET http://localhost:3001/usuarios
+Content-Type: application/json
+
+###
+GET http://localhost:3001/usuarios/67
+Content-Type: application/json
+###
+PATCH http://localhost:3001/usuarios/67
+Content-Type: application/json
+
+{
+    "nombre": "Peter the cat",
+    "email":  "ElMailDePeter@Mail"
+}
+###
+DELETE http://localhost:3001/usuarios/67
+Content-Type: application/json
+###
+
+### La API de canciones debe poder agregar, obtener todas, obtener por nombre, obtener por artista, actualizar y borrar canciones.
+
 GET http://localhost:3001/canciones
 Content-Type: application/json
 
@@ -13,10 +45,11 @@ Content-Type: application/json
     "anio": 2017,
     "genero": "Salsa"
 }
-###
+### ver una cancion
 GET http://localhost:3001/canciones/1
 Content-Type: application/json
-###
+
+### ver una cancion por nombre
 GET http://localhost:3001/canciones/titulo/Despacito
 Content-Type: application/json
 ###

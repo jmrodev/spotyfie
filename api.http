@@ -1,4 +1,44 @@
-GET http://localhost:3001/api
+GET http://localhost:3001/canciones
 Content-Type: application/json
 
 ###
+POST http://localhost:3001/canciones
+Content-Type: application/json
+
+{
+    "id": 9,
+    "titulo": "Despacito",
+    "artista": "Luis Fonsi",
+    "album": "Vida",
+    "anio": 2017,
+    "genero": "Salsa"
+}
+###
+GET http://localhost:3001/canciones/1
+Content-Type: application/json
+###
+GET http://localhost:3001/canciones/titulo/Despacito
+Content-Type: application/json
+###
+GET http://localhost:3001/canciones/artista/Luis Fonsi
+Content-Type: application/json
+###
+PATCH http://localhost:3001/canciones/5
+Content-Type: application/json
+
+{
+    "id": 5,
+    "titulo": "Despacito",
+    "artista": "Luis Fonsi",
+    "album": "Vida",
+    "anio": 2017,
+    "genero": "Reggaeton"
+}
+###
+DELETE http://localhost:3001/canciones/3
+Content-Type: application/json
+###
+
+
+
+

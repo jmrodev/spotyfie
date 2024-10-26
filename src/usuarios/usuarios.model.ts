@@ -1,7 +1,6 @@
-export class UsuariosModel {
+export interface UsuarioModel {
     id: number;
     nombre: string;
     email: string;
-    contrasena: string;
 }
 

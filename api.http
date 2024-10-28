@@ -16,7 +16,7 @@ Content-Type: application/json
 GET http://localhost:3001/usuarios/67
 Content-Type: application/json
 ###
-PATCH http://localhost:3001/usuarios/67
+PUT http://localhost:3001/usuarios/67
 Content-Type: application/json
 
 {
@@ -56,7 +56,7 @@ Content-Type: application/json
 GET http://localhost:3001/canciones/artista/Luis Fonsi
 Content-Type: application/json
 ###
-PATCH http://localhost:3001/canciones/5
+PUT http://localhost:3001/canciones/5
 Content-Type: application/json
 
 {

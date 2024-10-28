@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import { Controller, Get, Post, Body, Param, Delete, Put } from '@nestjs/common';
 import { CancionesService } from './canciones.service';
 import { CancionesModel } from './canciones.model';
 
@@ -31,7 +31,7 @@ export class CancionesController {
     return this.cancionesService.findOne(+id);
   }
 
-  @Patch(':id')
+  @Put(':id')
   update(@Param('id') id: string, @Body() updateCancion: CancionesModel) {
     return this.cancionesService.update(+id, updateCancion);
   }

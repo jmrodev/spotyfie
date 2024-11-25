@@ -16,11 +16,11 @@ Content-Type: application/json
 GET http://localhost:3001/usuarios/67
 Content-Type: application/json
 ###
-PUT http://localhost:3001/usuarios/67
+PUT http://localhost:3001/usuarios/1
 Content-Type: application/json
 
 {
-    "nombre": "Peter the cat",
+    "nombre": "Peter the Big cat",
     "email":  "ElMailDePeter@Mail"
 }
 ###
@@ -61,7 +61,7 @@ Content-Type: application/json
 
 {
     "id": 5,
-    "titulo": "Despacito",
+    "titulo": "Despacito II",
     "artista": "Luis Fonsi",
     "album": "Vida",
     "anio": 2017,
